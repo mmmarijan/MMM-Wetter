@@ -1,91 +1,124 @@
-
+/* Allgemeine Stile */
 body {
     font-family: Arial, sans-serif;
-    background-image: url('https://i.redd.it/4vztk5m7p9651.jpg');
+    background-image: url('https://i.redd.it/4vztk5m7p9651.jpg') ;
     background-size: 1920px 1080px;
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; /* Volle Bildschirmhöhe */
-    padding: 20px; /* Abstand zum Rand auf kleinen Geräten */
+    height: 100vh; /* Volle Bildschirmhöhe */
+    overflow: hidden; /* Scrollen deaktivieren */
 }
 
-.container{
-    background-color: white;
-    margin-left: 40%;
-    margin-right: 40%;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    margin-top: 20%;
-    font-family: 'Arial';
-    backdrop-filter: blur(10px);
-    background: rgba(255, 255, 255, 0.452);
-}
-
-/* Grundlegendes Styling für den Container */
-.input-container {
-    display: flex;
-    align-items: center;
-    max-width: 400px;
-    margin: 50px auto;
-    background: #f0f0f0;
-    border-radius: 25px;
-    padding: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Styling für das Input-Feld */
-  .cool-input {
-    flex: 1;
-    border: none;
-    outline: none;
-    background: transparent;
-    font-size: 16px;
-    padding: 10px 15px;
-    border-radius: 25px;
-    transition: all 0.3s ease;
-  }
-  
-  .cool-input::placeholder {
-    color: #999;
-  }
-  
-  /* Hover- und Fokus-Effekte */
-  .cool-input:hover {
-    background: rgba(255, 255, 255, 0.8);
-  }
-  
-  .cool-input:focus {
+.container {
     background: white;
-    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
-  }
-  
-  /* Styling für den Button */
-  .cool-button {
-    background: linear-gradient(45deg, #006115, #009c27);
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 25px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-left: 10px;
-    transition: all 0.3s ease;
-  }
-  
-  .cool-button:hover {
-    background: linear-gradient(45deg, #006120, #009c35);
-    transform: scale(1.05);
-  }
-  
-  .cool-button:active {
-    transform: scale(0.95);
-  }
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 90%; /* Responsive Breite */
+    max-height: 90vh; /* Maximale Höhe des Containers */
+    overflow: hidden; /* Scrollen im Container deaktivieren */
+}
 
-  .credits {
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.input-container {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 70%;
+}
+
+.cool-button {
+    padding: 10px 20px;
+    background: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.cool-button:hover {
+    background: #0056b3;
+}
+
+#weather-info {
+    margin-top: 20px;
+}
+
+#location {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+#temperature {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#description {
+    font-size: 16px;
+    color: #555;
+}
+
+.credits {
     margin-top: 30px;
-    font-size: 12px;
+    font-size: 14px;
     color: #777;
+}
+
+.mmm-tag {
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Responsive Anpassungen */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .input-container {
+        width: 60%;
+    }
+
+    .cool-button {
+        padding: 10px 15px;
+    }
+
+    #location {
+        font-size: 18px;
+    }
+
+    #temperature {
+        font-size: 16px;
+    }
+
+    #description {
+        font-size: 14px;
+    }
+
+    .credits {
+        font-size: 12px;
+    }
 }
