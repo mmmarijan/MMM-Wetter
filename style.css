@@ -1,8 +1,14 @@
-body{
+
+body {
+    font-family: Arial, sans-serif;
     background-image: url('https://i.redd.it/4vztk5m7p9651.jpg');
-    display: flex;
     background-size: 1920px 1080px;
-   
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Volle Bildschirmhöhe */
+    padding: 20px; /* Abstand zum Rand auf kleinen Geräten */
 }
 
 .container{
@@ -58,7 +64,7 @@ body{
   
   /* Styling für den Button */
   .cool-button {
-    background: linear-gradient(45deg, #007bff, #00bfff);
+    background: linear-gradient(45deg, #006115, #009c27);
     border: none;
     color: white;
     padding: 10px 20px;
@@ -70,7 +76,7 @@ body{
   }
   
   .cool-button:hover {
-    background: linear-gradient(45deg, #00bfff, #007bff);
+    background: linear-gradient(45deg, #006120, #009c35);
     transform: scale(1.05);
   }
   
